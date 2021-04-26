@@ -37,7 +37,7 @@ html{
 /*style for header*/
 .head header{
     width: 100vw;height: 100%;
-    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.945),rgba(0, 0, 0, 0.836));
+    background-color: #393e46;
 }
 .head header .left{
     width: 40%;height: 100%;
@@ -121,49 +121,11 @@ html{
 /************************************/
 /*Style for home */
 .home{
-    margin:50px auto;
-    width: 1000px;height: 500px;
-    border: black 1px solid;
-    background-color: #111;
+    margin: auto;
+    width: 100vw;height: 500px;
+    background-color: #00adb5;
     position: relative;
     z-index: 0;
-}
-.home::before{
-  content: "";
-  width: 100%;height: 100%;
-  position: absolute;
-  top: 0;left:0;
-  background: linear-gradient(45deg,#ffbc00,#ff0058);
-}
-.home::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg,#8B0000,#00FF00);
-    filter: blur(30px);
-}
-.home >span{
-    position: absolute;
-    top:6px;
-    left: 6px;
-    bottom: 6px;
-    right: 6px;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-    cursor: pointer;
-}
-.home >span::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background-color: rgba(250, 250, 250, 0.1);
-    pointer-events: none;
 }
 .home .content{
     width: 100%;height: 100%;
@@ -175,7 +137,7 @@ html{
     padding: 10px 20px;
 }
 .home .content h1{
-    font-size:60px;
+    font-size:100px;
 }
 .home .content h1 span{
     background-color: black;
@@ -206,50 +168,13 @@ html{
 /**********************************************************/
 /*Start Style for div about */
 .about{
-    margin:50px auto;
-    width: 1000px;height: 500px;
-    border: black 1px solid;
-    background-color: #111;
+    margin: auto;
+    width: 100vw;height: 500px;
+    background-color: #aad8d3;
     position: relative;
     z-index: 0;
 }
-.about::before{
-  content: "";
-  width: 100%;height: 100%;
-  position: absolute;
-  top: 0;left:0;
-  background: linear-gradient(45deg,#866302,#4d001b);
-}
-.about::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg,#e93d3d,#015501);
-    filter: blur(30px);
-}
-.about >span{
-    position: absolute;
-    top:6px;
-    left: 6px;
-    bottom: 6px;
-    right: 6px;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-    cursor: pointer;
-}
-.about >span::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background-color: rgba(250, 250, 250, 0.1);
-    pointer-events: none;
-}
+
 .about .content{
     width: 100%;height: 100%;
     z-index: 10;
@@ -289,7 +214,7 @@ html{
     justify-content: center;
 }
 .about .content .right img{
-    width: 90%;
+    width: 60%;
     border-radius: 50%;
     border: #111 solid 2px;
 }
@@ -328,8 +253,7 @@ html{
     top: 0;left:0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg,#ffbc00,#ff0058);
-    animation: roter2 5s infinite;
+    background: linear-gradient(45deg,#00adb5,#aad8d3);
     
 }
 .skills>div::after{
@@ -339,15 +263,11 @@ html{
     left:0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg,#8B0000,#00FF00);
+   
+    background: linear-gradient(45deg,#00adb5,#aad8d3);
     filter: blur(30px);
 }
-@keyframes roter2 {
-    25%{background: linear-gradient(45deg,#8B0000,#00FF00);}
-    50% {background: linear-gradient(80deg,#8B0000,#00FF00);}
-    75%{background: linear-gradient(120deg,#8B0000,#00FF00);}
-    100% {background: linear-gradient(180deg,#8B0000,#00FF00);}
- }
+
 .skills>div span{
     position: absolute;
     top:6px;
@@ -584,8 +504,8 @@ html{
     top: 0;left:0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg,#ffbc00,#ff0058);
-    animation: roter2 5s infinite;
+   /* background: linear-gradient(45deg,#ffbc00,#ff0058);
+    animation: roter2 5s infinite;*/
     
 }
 .contact>div::after{
@@ -595,14 +515,51 @@ html{
     left:0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg,#8B0000,#00FF00);
+    background: linear-gradient(45deg,#393e46,#aad8d3);
     filter: blur(30px);
 }
-@keyframes roter2 {
+@keyframes roter14 {
     25%{background: linear-gradient(45deg,#8B0000,#00FF00);}
     50% {background: linear-gradient(80deg,#8B0000,#00FF00);}
     75%{background: linear-gradient(120deg,#8B0000,#00FF00);}
     100% {background: linear-gradient(180deg,#8B0000,#00FF00);}
+ }
+ .contact>div:nth-of-type(1)::before{
+   
+    background: linear-gradient(45deg,#0800f3,#216aff);
+    animation: facebook 1s infinite;
+ }
+ .contact>div:nth-of-type(1)::after{
+    background: linear-gradient(45deg,#393e46,#aad8d3);
+ }
+
+ @keyframes facebook {
+    25%{background: linear-gradient(45deg,#b826f0,#2766fa);}
+    50% {background: linear-gradient(80deg,#b826f0,#2766fa);}
+    75%{background: linear-gradient(120deg,#b826f0,#2766fa);}
+    100% {background: linear-gradient(180deg,#b826f0,#2766fa);}
+ }
+ .contact>div:nth-of-type(2)::before{
+    background: linear-gradient(45deg,#ff0000,#ffffff);
+    animation: youtube 1s infinite;
+ }
+ @keyframes youtube {
+    25%{background: linear-gradient(45deg,#ff0000,#ffffff);}
+    50% {background: linear-gradient(80deg,#ff0000,#ffffff);}
+    75%{background: linear-gradient(120deg,#ff0000,#ffffff);}
+    100% {background: linear-gradient(180deg,#ff0000,#ffffff);}
+ 
+ }
+ .contact>div:nth-of-type(3)::before{
+    background: linear-gradient(45deg,#000000,#000);
+    animation: github 1s infinite;
+ }
+ @keyframes github {
+    25%{background: linear-gradient(45deg,#000000,#fff);}
+    50% {background: linear-gradient(80deg,#fff,#000);}
+    75%{background: linear-gradient(120deg,#000000,#fff);}
+    100% {background: linear-gradient(180deg,#fff,#000);}
+ 
  }
  .contact>div span{
     position: absolute;
@@ -680,7 +637,7 @@ html{
 /*style for footer */
 footer{
     width: 100vw;height: 200px;
-    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.945),rgba(0, 0, 0, 0.836));
+    background-color: #393e46;
 }
 footer .footer{
     margin: auto;
